@@ -26,3 +26,5 @@ snakemake --profile ../south-usa-sarscov2/profiles/south-central/
 ```
 
 You may also have to specify the number of cores available.
+
+The main build instructions are in `profiles/south-central/builds.yaml` -- this outlines the builds to run, and what sampling to use, as well as some other options.
