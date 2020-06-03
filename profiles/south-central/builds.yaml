@@ -112,3 +112,17 @@ subsampling:
 files:
   #colors: "profiles/south-central/colors.tsv"
   auspice_config: "profiles/south-central/auspice_config_south-central.json"
+
+traits:
+  louisiana:
+    columns: ["location", "division"]
+  south-central:
+    columns: ["division"]
+
+exposure:
+  louisiana:
+    trait: "division"
+    exposure: "division_exposure"
+  south-central:
+    trait: "division"
+    exposure: "division_exposure"
