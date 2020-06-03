@@ -1,0 +1,29 @@
+location	East Feliciana Parish	#511EA8
+location	East Baton Rouge Parish	#403DC5
+location	Bienville Parish	#4064CF
+location	Webster Parish	#4886C6
+location	Morehouse Parish	#569FB0
+location	Caddo Parish	#68AF92
+location	Livingston Parish	#7FB975
+location	Iberville Parish	#9ABE5C
+location	Rapides Parish	#B6BD4B
+location	Tensas Parish	#CFB541
+location	Bossier Parish	#E0A23A
+location	Grant Parish	#E68334
+location	DeSoto Parish	#E2572B
+location	New Orleans	#DB2823
+
+recency	Older	#416DCE
+recency	One month ago	#59A3AA
+recency	One week ago	#84BA6F
+recency	3-7 days ago	#BBBC49
+recency	1-2 days ago	#E29D39
+recency	New	#E1502A
+
+region	Oceania	#416DCE
+region	Asia	#59A3AA
+region	Africa	#84BA6F
+region	Europe	#BBBC49
+region	North America	#E29D39
+region	South America	#E1502A
+

@@ -1,0 +1,114 @@
+# Define locations for which builds should be created.
+# For each build we specify a subsampling scheme via an explicit key.
+# If the name of the focal geography differs from the build name this needs to
+# be specified explicity as geographic_name. In addition, we require the
+# geographic scale the build focuses on. Together name and scale serve a look-up
+# in the geo_hierarchy to define region, country, division, etc
+builds:
+  texas:
+    subsampling_scheme: state
+    geographic_scale: division
+    region: North America
+    country: USA
+    division: Texas
+  louisiana:
+    subsampling_scheme: state
+    geographic_scale: division
+    region: North America
+    country: USA
+    division: Louisiana
+    colors: "profiles/south-central/colors-Louisiana.tsv"
+    auspice_config: "profiles/south-central/auspice_config_south-central_Louisiana.json"
+  south-central:
+    subsampling_scheme: south-central
+    geographic_scale: composite
+    region: North America
+    country: USA
+    division: South Central
+
+subsampling:
+  # Default subsampling logic for divisions - copied
+  state:
+    # Focal samples for division
+    division:
+      group_by: "year month"
+      seq_per_group: 400
+      exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division!={division}'"
+    # Contextual samples from division's country
+    country:
+      group_by: "division year month"
+      seq_per_group: 20
+      exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division={division}'"
+      priorities:
+        type: "proximity"
+        focus: "division"
+    # Contextual samples from division's region
+    region:
+      group_by: "country year month"
+      seq_per_group: 10
+      exclude: "--exclude-where 'region!={region}' 'country={country}'"
+      priorities:
+        type: "proximity"
+        focus: "division"
+    # Contextual samples from the rest of the world, excluding the current
+    # division to avoid resampling.
+    global:
+      group_by: "country year month"
+      seq_per_group: 5
+      exclude: "--exclude-where 'region={region}'"
+      priorities:
+        type: "proximity"
+        focus: "division"
+
+  south-central:
+    texas:
+      group_by: "year month"
+      seq_per_group: 400
+      exclude: "--exclude-where 'division!=texas'"
+    oklahoma:
+      group_by: "year month"
+      seq_per_group: 300
+      exclude: "--exclude-where 'division!=oklahoma'"
+    louisiana:
+      group_by: "year month"
+      seq_per_group: 400
+      exclude: "--exclude-where 'division!=louisiana'"
+    arkansas:
+      group_by: "year month"
+      seq_per_group: 300
+      exclude: "--exclude-where 'division!=arkansas'"
+    mississippi:
+      group_by: "year month"
+      seq_per_group: 300
+      exclude: "--exclude-where 'division!=mississippi'"
+    new-mexico:
+      group_by: "year month"
+      seq_per_group: 300
+      exclude: "--exclude-where 'division!=new-mexico'"
+    # Contextual samples from the country
+    country:
+      group_by: "division year month"
+      seq_per_group: 30
+      exclude: "--exclude-where 'country!=usa'"
+
+    # Contextual samples from division's region
+    region:
+      group_by: "country year month"
+      seq_per_group: 10
+      exclude: "--exclude-where 'region!=north-america'"
+      priorities:
+        type: "proximity"
+        focus: "country"
+    # Contextual samples from the rest of the world, excluding the current
+    # division to avoid resampling.
+    global:
+      group_by: "country year month"
+      seq_per_group: 5
+      exclude: "--exclude-where 'region=north-america'"
+      priorities:
+        type: "proximity"
+        focus: "country"
+
+files:
+  #colors: "profiles/south-central/colors.tsv"
+  auspice_config: "profiles/south-central/auspice_config_south-central.json"
