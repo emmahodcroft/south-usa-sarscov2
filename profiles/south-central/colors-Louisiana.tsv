@@ -1,17 +1,22 @@
-location	East Feliciana Parish	#511EA8
-location	East Baton Rouge Parish	#403DC5
-location	Bienville Parish	#4064CF
-location	Webster Parish	#4886C6
-location	Morehouse Parish	#569FB0
-location	Caddo Parish	#68AF92
-location	Livingston Parish	#7FB975
-location	Iberville Parish	#9ABE5C
-location	Rapides Parish	#B6BD4B
-location	Tensas Parish	#CFB541
-location	Bossier Parish	#E0A23A
-location	Grant Parish	#E68334
-location	DeSoto Parish	#E2572B
-location	New Orleans	#DB2823
+location	East Feliciana Parish	#5E1D9D
+location	East Baton Rouge Parish	#482BB6
+location	Bienville Parish	#3F45C8
+location	Webster Parish	#3F62D0
+location	Morehouse Parish	#447DCC
+location	Caddo Parish	#4D92BF
+location	Livingston Parish	#58A2AC
+location	Iberville Parish	#66AE96
+location	Rapides Parish	#76B680
+location	Tensas Parish	#89BB6B
+location	Bossier Parish	#9DBE5A
+location	Grant Parish	#B2BD4D
+location	DeSoto Parish	#C5B945
+location	New Orleans	#D5B03F
+location	St Tammany Parish	#E1A13A
+location	St Bernard Parish	#E68B35
+location	East Feliciana Parish	#E56E30
+location	Jefferson Parish	#E04B29
+location	Assumption Parish	#DB2823
 
 recency	Older	#416DCE
 recency	One month ago	#59A3AA
