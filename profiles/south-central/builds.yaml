@@ -17,7 +17,7 @@ builds:
     region: North America
     country: USA
     division: Louisiana
-    colors: "profiles/south-central/colors-Louisiana.tsv"
+    colors: "../south-usa-sarscov2/profiles/south-central/colors-Louisiana.tsv" #"profiles/south-central/colors-Louisiana.tsv"
     auspice_config: "profiles/south-central/auspice_config_south-central_Louisiana.json"
   south-central:
     subsampling_scheme: south-central
