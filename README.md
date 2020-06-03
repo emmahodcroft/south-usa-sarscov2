@@ -11,6 +11,5 @@ You can view the live builds here:
 - [Louisiana (location view)](https://nextstrain.org/community/emmahodcroft/south-usa-sarscov2/louisiana?r=location)
 - [Texas (state view)](https://nextstrain.org/community/emmahodcroft/south-usa-sarscov2/texas)
 - [Texas (location view)](https://nextstrain.org/community/emmahodcroft/south-usa-sarscov2/texas?r=location)
-
-
-- South Central (coming soon)
+- [South Central (state view)](https://nextstrain.org/community/emmahodcroft/south-usa-sarscov2/south-central)
+- [South Central (location view)](https://nextstrain.org/community/emmahodcroft/south-usa-sarscov2/south-central?r=location)
