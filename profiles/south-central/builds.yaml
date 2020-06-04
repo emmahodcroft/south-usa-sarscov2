@@ -112,6 +112,7 @@ subsampling:
 files:
   #colors: "profiles/south-central/colors.tsv"
   auspice_config: "../south-usa-sarscov2/profiles/south-central/auspice_config_south-central.json" #"profiles/south-central/auspice_config_south-central.json"
+  description: "../south-usa-sarscov2/profiles/south-central/description.md"
 
 traits:
   louisiana:
