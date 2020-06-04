@@ -116,8 +116,6 @@ files:
 traits:
   louisiana:
     columns: ["location", "division_exposure"]
-  south-central:
-    columns: ["division_exposure"]
 
 exposure:
   louisiana:
