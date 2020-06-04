@@ -17,13 +17,13 @@ latency-wait: 60
 # "partition". Jobs submitted to the "restart" partition will start running
 # almost immediately, but they may also be killed at any moment when someone
 # else needs those resources. This is analogous to the spot resources on AWS.
-cluster-config: profiles/nextstrain-scicore/cluster.json
+cluster-config: ../south-usa-sarscov2/profiles/south-central/cluster.json #profiles/nextstrain-scicore/cluster.json
 
 cluster: "sbatch --time={cluster.time} --mem={cluster.mem} --cpus-per-task={cluster.n} --qos={cluster.qos}"
 
 jobs: 128
 
-jobscript: profiles/nextstrain-scicore/submit.sh
+jobscript: ../south-usa-sarscov2/profiles/south-central/submit.sh #profiles/nextstrain-scicore/submit.sh
 
 # Set the name for the job as display in the cluster queue.
 jobname: "{rulename}.{jobid}.sh"

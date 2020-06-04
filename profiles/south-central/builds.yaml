@@ -18,7 +18,7 @@ builds:
     country: USA
     division: Louisiana
     colors: "../south-usa-sarscov2/profiles/south-central/colors-Louisiana.tsv" #"profiles/south-central/colors-Louisiana.tsv"
-    auspice_config: "profiles/south-central/auspice_config_south-central_Louisiana.json"
+    auspice_config: "../south-usa-sarscov2/profiles/south-central/auspice_config_south-central_Louisiana.json" #"profiles/south-central/auspice_config_south-central_Louisiana.json"
   south-central:
     subsampling_scheme: south-central
     geographic_scale: composite
@@ -111,13 +111,13 @@ subsampling:
 
 files:
   #colors: "profiles/south-central/colors.tsv"
-  auspice_config: "profiles/south-central/auspice_config_south-central.json"
+  auspice_config: "../south-usa-sarscov2/profiles/south-central/auspice_config_south-central.json" #"profiles/south-central/auspice_config_south-central.json"
 
 traits:
   louisiana:
-    columns: ["location", "division"]
+    columns: ["location", "division_exposure"]
   south-central:
-    columns: ["division"]
+    columns: ["division_exposure"]
 
 exposure:
   louisiana:
