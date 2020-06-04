@@ -123,6 +123,3 @@ exposure:
   louisiana:
     trait: "division"
     exposure: "division_exposure"
-  south-central:
-    trait: "division"
-    exposure: "division_exposure"
