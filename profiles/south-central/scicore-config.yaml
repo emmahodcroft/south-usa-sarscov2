@@ -1,0 +1,2 @@
+
+localrules: "../south-usa-sarscov2/profiles/south-central/localrules.smk"
