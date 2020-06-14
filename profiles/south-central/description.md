@@ -2,7 +2,7 @@ This data is presented as part of a group initiative involving:
 * Jeremy Kamil Lab - LSU Health Shreveport
 * Kristian Andersen Lab - Scripps Research
 * Robert Garry Lab - Tulane University
-* Vaughn Cooper - MiGS Center, LLC
+* Vaughn Cooper - MiGS Center, LLC & University of Pittsburgh School of Medicine
 * Marc Suchard Lab - University of California, LA
 * Philippe Lemey - KU Leuven
 * Nathan Grubaugh Lab - Yale School of Medicine
