@@ -32,7 +32,7 @@ subsampling:
     # Focal samples for division
     division:
       group_by: "year month"
-      seq_per_group: 400
+      seq_per_group: 1000
       exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division!={division}'"
     # Contextual samples from division's country
     country:
@@ -63,27 +63,27 @@ subsampling:
   south-central:
     texas:
       group_by: "year month"
-      seq_per_group: 400
+      seq_per_group: 500
       exclude: "--exclude-where 'division!=texas'"
     oklahoma:
       group_by: "year month"
-      seq_per_group: 300
+      seq_per_group: 500
       exclude: "--exclude-where 'division!=oklahoma'"
     louisiana:
       group_by: "year month"
-      seq_per_group: 400
+      seq_per_group: 500
       exclude: "--exclude-where 'division!=louisiana'"
     arkansas:
       group_by: "year month"
-      seq_per_group: 300
+      seq_per_group: 500
       exclude: "--exclude-where 'division!=arkansas'"
     mississippi:
       group_by: "year month"
-      seq_per_group: 300
+      seq_per_group: 500
       exclude: "--exclude-where 'division!=mississippi'"
     new-mexico:
       group_by: "year month"
-      seq_per_group: 300
+      seq_per_group: 500
       exclude: "--exclude-where 'division!=new-mexico'"
     # Contextual samples from the country
     country:
