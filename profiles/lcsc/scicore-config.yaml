@@ -1,0 +1,2 @@
+
+localrules: "../south-usa-sarscov2/profiles/lcsc/localrules.smk"

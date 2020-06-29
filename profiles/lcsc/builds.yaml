@@ -1,0 +1,38 @@
+# Define locations for which builds should be created.
+# For each build we specify a subsampling scheme via an explicit key.
+# If the name of the focal geography differs from the build name this needs to
+# be specified explicity as geographic_name. In addition, we require the
+# geographic scale the build focuses on. Together name and scale serve a look-up
+# in the geo_hierarchy to define region, country, division, etc
+
+builds:
+  louisiana-lcsc:
+    subsampling_scheme: state
+    geographic_scale: division
+    region: NA
+    country: NA
+    division: NA
+
+subsampling:
+  # Default subsampling logic for divisions - copied
+  state:
+    # Focal samples for division
+    division:
+      group_by: "year month"
+      seq_per_group: 1000
+      exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division!={division}'"
+
+files:
+  #colors: "profiles/south-central/colors.tsv"
+  auspice_config: "../south-usa-sarscov2/profiles/lcsc/auspice_config_south-central_Louisiana.json" #"profiles/south-central/auspice_config_south-central.json"
+  description: "../south-usa-sarscov2/profiles/lcsc/description.md"
+  include: "../south-usa-sarscov2/profiles/lcsc/to_include.txt"
+
+traits:
+  louisiana-lcsc:
+    columns: ["location", "division_exposure"]
+
+exposure:
+  louisiana-lcsc:
+    trait: "division"
+    exposure: "division_exposure"
