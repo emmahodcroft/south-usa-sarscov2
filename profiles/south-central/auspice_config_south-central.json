@@ -6,6 +6,21 @@
   ],
   "colorings": [
     {
+      "key": "legacy_clade_membership",
+      "title": "Old Nextstrain clade",
+      "type": "categorical"
+    },
+    {
+      "key": "pangolin_lineage",
+      "title": "Pangolin lineage",
+      "type": "categorical"
+    },
+    {
+      "key": "GISAID_clade",
+      "title": "GISAID Clade",
+      "type": "categorical"
+    },
+    {
       "key": "location",
       "title": "Location",
       "type": "categorical"
@@ -99,6 +114,7 @@
   },
   "filters": [
     "recency",
+    "clade_membership",
     "location",
     "division",
     "country",
