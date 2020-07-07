@@ -1,5 +1,5 @@
 configfile:
-  - config/config.yaml
+  - defaults/parameters.yaml
   - ../south-usa-sarscov2/profiles/south-central/builds.yaml #profiles/south-central/builds.yaml
   - ../south-usa-sarscov2/profiles/south-central/scicore-config.yaml #profiles/nextstrain-scicore/scicore-config.yaml
 
