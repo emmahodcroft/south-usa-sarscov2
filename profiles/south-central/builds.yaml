@@ -11,6 +11,7 @@ builds:
     region: North America
     country: USA
     division: Texas
+    colors: "../south-usa-sarscov2/profiles/south-central/colors.tsv"
   louisiana:
     subsampling_scheme: state
     geographic_scale: division
@@ -25,6 +26,7 @@ builds:
     region: North America
     country: USA
     division: South Central
+    colors: "../south-usa-sarscov2/profiles/south-central/colors.tsv"
 
 subsampling:
   # Default subsampling logic for divisions - copied
