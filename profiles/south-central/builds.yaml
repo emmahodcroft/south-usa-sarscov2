@@ -65,7 +65,7 @@ subsampling:
   south-central:
     texas:
       group_by: "year month"
-      seq_per_group: 500
+      seq_per_group: 1000
       exclude: "--exclude-where 'division!=texas'"
     oklahoma:
       group_by: "year month"
@@ -73,7 +73,7 @@ subsampling:
       exclude: "--exclude-where 'division!=oklahoma'"
     louisiana:
       group_by: "year month"
-      seq_per_group: 500
+      seq_per_group: 1000
       exclude: "--exclude-where 'division!=louisiana'"
     arkansas:
       group_by: "year month"
