@@ -119,8 +119,13 @@ files:
 traits:
   louisiana:
     columns: ["location", "division_exposure"]
+  texas:
+    columns: ["location", "division_exposure"]
 
 exposure:
   louisiana:
+    trait: "division"
+    exposure: "division_exposure"
+  texas:
     trait: "division"
     exposure: "division_exposure"
