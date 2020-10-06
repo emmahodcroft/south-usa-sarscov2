@@ -2,10 +2,10 @@ localrules: filter, partition_sequences, aggregate_alignments, mask, subsample_f
 
 rule combine_texas:
     input:
-        alignment_rest_texas = "results/texasnew/sample-resttexas.fasta",
-        alignment_houston = "results/texasnew/sample-houston.fasta"
+        alignment_rest_texas = "results/texas/sample-resttexas.fasta",
+        alignment_houston = "results/texas/sample-houston.fasta"
     output:
-        alignment_texas = "results/texasnew/sample-texas.fasta"
+        alignment_texas = "results/texas/sample-texas.fasta"
     shell:
         """
         cat {input.alignment_rest_texas} {input.alignment_houston} > {output.alignment_texas}
