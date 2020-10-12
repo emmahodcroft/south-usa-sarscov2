@@ -91,7 +91,7 @@ subsampling:
       exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division!={division}' 'location=Greater Houston Area'"
     houston:
       group_by: "year month"
-      max_sequences: 6000
+      max_sequences: 2000
       exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division!={division}' 'location!=Greater Houston Area'"
     # Contextual samples from division's country
     country:
