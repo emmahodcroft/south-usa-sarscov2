@@ -17,11 +17,18 @@
         "n" : 1,
         "mem": "16G"
     },
+    "traits" :
+    {
+        "time" : "00:59:00",
+        "qos": "6hours",
+        "n" : 1,
+        "mem": "16G"
+    },
     "tree" : {
         "n": 16,
         "qos": "6hours",
         "time" : "05:59:00",
-        "mem": "16G"
+        "mem": "32G"
     },
     "align": {
         "n" : 2,
