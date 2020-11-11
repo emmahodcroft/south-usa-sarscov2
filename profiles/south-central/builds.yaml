@@ -76,7 +76,7 @@ subsampling:
     # Contextual samples from the rest of the world, excluding the current
     # division to avoid resampling.
     global:
-      group_by: "country year month"
+      group_by: "region year month"
       max_sequences: 500
       exclude: "--exclude-where 'region={region}'"
       priorities:
@@ -112,7 +112,7 @@ subsampling:
     # Contextual samples from the rest of the world, excluding the current
     # division to avoid resampling.
     global:
-      group_by: "country year month"
+      group_by: "region year month"
       max_sequences: 500
       exclude: "--exclude-where 'region={region}'"
       priorities:
@@ -154,7 +154,7 @@ subsampling:
   south-central:
     texas:
       group_by: "year month"
-      seq_per_group: 1000
+      seq_per_group: 500
       exclude: "--exclude-where 'division!=texas'"
     oklahoma:
       group_by: "year month"

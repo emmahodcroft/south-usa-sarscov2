@@ -8,14 +8,14 @@
     },
     "ancestral":
     {
-        "mem": "16G"
+        "mem": "32G"
     },
     "refine" :
     {
         "time" : "05:59:00",
         "qos": "6hours",
         "n" : 1,
-        "mem": "16G"
+        "mem": "64G"
     },
     "traits" :
     {
@@ -32,9 +32,11 @@
     },
     "align": {
         "n" : 2,
-        "mem": "16G"
+        "mem": "32G"
     },
     "proximity_score":{
-        "mem": "32G"
+        "time" : "05:59:00",
+        "qos": "6hours",
+        "mem": "128G"
     }
 }
